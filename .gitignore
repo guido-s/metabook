@@ -1,0 +1,10 @@
+*~
+*.bak
+symbols.rds
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+roxygen2-*.R
+.DS_Store
+*.Rproj

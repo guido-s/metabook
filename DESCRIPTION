@@ -1,0 +1,18 @@
+Package: metabook
+Title: Data Sets and Code for Meta-Analysis with R
+Version: 0.1-0
+Date: 2026-02-26
+Depends: R (>= 4.0.0)
+Imports: meta (>= 8.2-1), netmeta (>= 3.3-1), metasens (>= 1.5-3)
+Authors@R: person("Guido", "Schwarzer",
+                  role = c("cre", "aut"),
+                  email = "guido.schwarzer@uniklinik-freiburg.de",
+                  comment = c(ORCID = "0000-0001-6214-9087"))
+Author: Guido Schwarzer [cre, aut] (<https://orcid.org/0000-0001-6214-9087>)
+Maintainer: Guido Schwarzer <guido.schwarzer@uniklinik-freiburg.de>
+URL: https://github.com/guido-s/metabook/
+Description: Data sets and code supporting the second edition of Schwarzer, Carpenter, and Rücker <DOI:10.1007/978-3-319-21416-0>, "Meta-Analysis with R".
+LazyData: TRUE
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
