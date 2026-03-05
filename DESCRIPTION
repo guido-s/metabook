@@ -1,7 +1,7 @@
 Package: metabook
 Title: Data Sets and Code for Meta-Analysis with R
-Version: 0.1-0
-Date: 2026-02-26
+Version: 0.2-0
+Date: 2026-03-05
 Depends: R (>= 4.0.0)
 Imports: meta (>= 8.2-1), netmeta (>= 3.3-1), metasens (>= 1.5-3)
 Authors@R: person("Guido", "Schwarzer",
