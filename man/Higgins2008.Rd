@@ -1,11 +1,16 @@
 \name{Higgins2008}
 \docType{data}
 \alias{Higgins2008}
+
 \title{Trials on Haloperidol in Schizophrenia}
-\description{Results on clinical improvement after therapy from 17 trials evaluating haloperidol in patients with schizophrenia.}
-\usage{
-Higgins2008
+
+\description{
+Results on clinical improvement after therapy from 17 trials evaluating
+haloperidol in patients with schizophrenia.
 }
+
+\usage{Higgins2008}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -18,21 +23,32 @@ The data frame contains the following columns:
 \bold{miss.plac} \tab \code{integer} \tab number of missing observations (placebo group) \cr
 }  
 }
-\details{
-Higgins et al. (2008) suggested several imputation methods for the meta-analysis of binary outcomes with missing data. The example data set with 17 trials comes originally from a Cochrane review comparing haloperidol with placebo for the treatment of schizophrenia. While the antipsychotic benefits of haloperidol were identified in the 1950's, trials in this patient population are prone to high proportions of missing outcome data, often due to insufficient compliance with randomised controlled trial protocols.
 
-The outcome is clinical improvement after therapy. For each study, the number of responders, failures, and missing observations are available.
+\details{
+Higgins et al. (2008) suggested several imputation methods for the meta-analysis
+of binary outcomes with missing data. The example data set with 17 trials comes
+originally from a Cochrane review comparing haloperidol with placebo for the
+treatment of schizophrenia. While the antipsychotic benefits of haloperidol
+were identified in the 1950's, trials in this patient population are prone to
+high proportions of missing outcome data, often due to insufficient compliance
+with randomised controlled trial protocols.
+
+The outcome is clinical improvement after therapy. For each study, the
+number of responders, failures, and missing observations are available.
 }
+
 \source{
-Higgins, J.P.T., White, I.R., Wood, A.M. (2008).
+Higgins JPT, White IR, Wood AM (2008):
 Imputation methods for missing outcome data in meta-analysis of clinical trials.
-\emph{Clinical Trials}, \bold{5}: 225-39
+\emph{Clinical Trials},
+\bold{5}: 225-39
 }
-\author{
-Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("metasens", quietly = TRUE)) {
 # Load metasens package
 library("metasens")
 
@@ -40,7 +56,7 @@ library("metasens")
 oldset <- settings.meta(digits = 3)
 
 # Conduct common effect meta-analysis of available data
-m <- metabin(resp.halo, resp.halo + fail.halo,
+ma <- metabin(resp.halo, resp.halo + fail.halo,
   resp.plac, resp.plac + fail.plac,
   data = Higgins2008, studlab = author,
   sm = "OR", method = "Inverse", random = FALSE,
@@ -49,22 +65,22 @@ m <- metabin(resp.halo, resp.halo + fail.halo,
   label.right = "Favours haloperidol")
 
 # Best case scenario for haloperidol
-m.b <- metamiss(m, miss.halo, miss.plac,
+ma_b <- metamiss(ma, miss.halo, miss.plac,
   method.miss = "b", small.values = "undesirable")
 # Worst case scenario for haloperidol
-m.w <- metamiss(m, miss.halo, miss.plac,
+ma_w <- metamiss(ma, miss.halo, miss.plac,
   method.miss = "w", small.values = "undesirable")
 
 # Forest plot
-m.sens <- metamerge(m, m.b, text.pooled2 = "Best case scenario")
-m.sens <- metamerge(m.sens, m.w, text.pooled2 = "Worst case scenario")
-forest(m.sens)
+ma_sens <- metamerge(ma, ma_b, text.pooled2 = "Best case scenario")
+ma_sens <- metamerge(ma_sens, ma_w, text.pooled2 = "Worst case scenario")
+forest(ma_sens)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{psychiatry}
 \concept{odds ratios}
 \concept{missing data}
-\section{Concepts}{
-   psychiatry, odds ratios, missing data
-}
+\section{Concepts}{psychiatry, odds ratios, missing data}

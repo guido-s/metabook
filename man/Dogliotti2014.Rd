@@ -1,11 +1,16 @@
 \name{Dogliotti2014}
 \docType{data}
 \alias{Dogliotti2014}
+
 \title{Studies on Antithrombotic Treatments to Prevent Strokes}
-\description{Results from 20 trials examining the effectiveness of antithrombotic treatments to prevent strokes in patients with non-valvular atrial fibrillation.}
-\usage{
-Dogliotti2014
+
+\description{
+Results from 20 trials examining the effectiveness of antithrombotic treatments
+to prevent strokes in patients with non-valvular atrial fibrillation.
 }
+
+\usage{Dogliotti2014}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -16,19 +21,30 @@ The data frame contains the following columns:
 \bold{total}     \tab \code{numeric}   \tab number of individuals
 }
 }
-\details{
-   This Set comes from a systematic review aiming to estimate the effects of eight antithrombotic treatments including placebo in reducing the incidence of major thrombotic events in patients with non-valvular atrial fibrillation (Dogliotti et al., 2014).
 
-   The review included 20 studies with 79,808 participants, four studies are three-arm studies. The primary outcome is stroke reduction (yes / no).
+\details{
+This data set comes from a systematic review aiming to estimate the effects of
+eight antithrombotic treatments including placebo in reducing the incidence of
+major thrombotic events in patients with non-valvular atrial fibrillation
+(Dogliotti et al., 2014).
+
+The review included 20 studies with 79,808 participants, four studies are
+three-arm studies. The primary outcome is stroke reduction (yes / no).
 }
+
 \source{
-   Dogliotti, A., Paolasso, E., & Giugliano, R. P. (2014). Current and new oral antithrombotics in non-valvular atrial fibrillation: A network meta-analysis of 79808 patients. \emph{Heart}, \bold{100}(5), 396--405. \verb{https://doi.org/10.1136/heartjnl-2013-304347}
+Dogliotti A, Paolasso E, Giugliano RP (2014):
+Current and new oral antithrombotics in non-valvular atrial fibrillation:
+A network meta-analysis of 79808 patients.
+\emph{Heart}, \bold{100}(5), 396--405.
+\verb{https://doi.org/10.1136/heartjnl-2013-304347}
 }
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -74,11 +90,11 @@ forest(nma)
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}
-\section{Concepts}{
-   medicine, odds ratios, network meta-analysis, Mantel-Haenszel method
-}
+\section{Concepts}{medicine, odds ratios, network meta-analysis, Mantel-Haenszel method}

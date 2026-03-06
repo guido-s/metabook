@@ -1,11 +1,17 @@
 \name{Greb2008}
 \docType{data}
 \alias{Greb2008}
+
 \title{Trials on High-Dose Chemotherapy with Autologous Stem Cell Transplantation in Aggressive Non-Hodgkin Lymphoma}
-\description{Results on complete response from 14 trials evaluating high-dose chemotherapy with autologous stem cell transplantation in patients with aggressive non-Hodgkin lymphoma.}
-\usage{
-Greb2008
+
+\description{
+Results on complete response from 14 trials evaluating high-dose chemotherapy
+with autologous stem cell transplantation in patients with aggressive
+non-Hodgkin lymphoma.
 }
+
+\usage{Greb2008}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -16,22 +22,36 @@ The data frame contains the following columns:
 \bold{Nc} \tab \code{integer} \tab number of patients (standard chemotherapy) \cr
 }
 }
+
 \details{
-Greb et al. (2008) conducted a Cochrane Review to assess the effects of high-dose chemotherapy with autologous stem cell transplantation as part of the first-line treatment of adult patients with aggressive non-Hodgkin lymphoma. The primary outcome was survival time; the binary outcome 'complete response' was one of several secondary outcomes. For binary outcomes, the Cochrane review used the risk ratio and the common effect model.
+Greb et al. (2008) conducted a Cochrane Review to assess the effects of
+high-dose chemotherapy with autologous stem cell transplantation as part of the
+first-line treatment of adult patients with aggressive non-Hodgkin lymphoma.
+The primary outcome was survival time; the binary outcome 'complete response'
+was one of several secondary outcomes. For binary outcomes, the Cochrane review
+used the risk ratio and the common effect model.
 
 This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Greb, A., Bohlius, J., Schiefer, D., et al. (2008). High‐dose chemotherapy with autologous stem cell transplantation in the first line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD004024.pub2}
+Greb A, Bohlius J, Schiefer D, et al. (2008):
+High‐dose chemotherapy with autologous stem cell transplantation in the first
+line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults.
+\emph{Cochrane Database of Systematic Reviews}, \bold{1},
+\verb{https://doi.org/10.1002/14651858.CD004024.pub2}
 }
+
 \references{
-Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
+Schwarzer G, Carpenter JR and Rücker G (2015):
+\emph{Meta-Analysis with R (Use-R!)}.
+Springer International Publishing, Switzerland
 }
-\author{
-Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -54,10 +74,10 @@ forest(mb1)
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{oncology}
 \concept{risk ratios}
-\section{Concepts}{
-   medicine, oncology, risk ratios
-}
+\section{Concepts}{medicine, oncology, risk ratios}

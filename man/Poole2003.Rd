@@ -36,6 +36,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -63,10 +64,10 @@ forest(m, xlim = c(-0.5, 0.2),
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
-\concept{medicine}
-\concept{raw mean differences}
-\concept{subgroup analysis}
-\section{Concepts}{
-   medicine, raw mean differences, subgroup analysis
 }
+
+\keyword{data sets}
+\concept{medicine}
+\concept{mean differences}
+\concept{subgroup analysis}
+\section{Concepts}{medicine, mean differences, subgroup analysis}

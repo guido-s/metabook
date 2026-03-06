@@ -1,11 +1,16 @@
 \name{Woods2010}
 \docType{data}
 \alias{Woods2010}
+
 \title{Studies on Treatments for Chronic Obstructive Pulmonary Disease}
-\description{Results from 3 trials examining the mortality risk of three treatments and placebo in patients with chronic obstructive pulmonary disease.}
-\usage{
-Woods2010
+
+\description{
+Results from three trials examining the mortality risk of three treatments and
+placebo in patients with chronic obstructive pulmonary disease.
 }
+
+\usage{Woods2010}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -15,17 +20,26 @@ The data frame contains the following columns:
 \bold{N}         \tab \code{integer}   \tab number of patients
 }
 }
+
 \details{
-   Count mortality statistics in randomised controlled trials of treatments for chronic obstructive pulmonary disease (Woods et al., 2010, Table 1).
+Count mortality statistics in randomised controlled trials of treatments for
+chronic obstructive pulmonary disease (Woods et al., 2010, Table 1).
 }
+
 \source{
-   Woods, B. S., Hawkins, N., & Scott, D. A. (2010). Network meta-analysis on the log-hazard scale, combining count and hazard ratio statistics accounting for multi-arm trials: A tutorial. \emph{BMC Medical Research Methodology}, \bold{10}, 54. \verb{https://doi.org/10.1186/1471-2288-10-54}
+Woods BS, Hawkins N, Scott DA (2010):
+Network meta-analysis on the log-hazard scale, combining count and
+hazard ratio statistics accounting for multi-arm trials: A tutorial.
+\emph{BMC Medical Research Methodology},
+\bold{10}, 54.
+\verb{https://doi.org/10.1186/1471-2288-10-54}
 }
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -55,10 +69,10 @@ forest(nma, ref = "Placebo", drop = TRUE,
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{odds ratios}
 \concept{network meta-analysis}
-\section{Concepts}{
-   medicine, odds ratios, network meta-analysis
-}
+\section{Concepts}{medicine, odds ratios, network meta-analysis}

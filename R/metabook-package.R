@@ -21,12 +21,6 @@
 #' Springer International Publishing, Switzerland
 #'
 #' @keywords package
-#'
-#' @import meta
-#'
-#' @import netmeta
-#'
-#' @import metasens
 
 
 "_PACKAGE"

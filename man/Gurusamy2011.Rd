@@ -1,11 +1,17 @@
 \name{Gurusamy2011}
 \docType{data}
 \alias{Gurusamy2011}
+
 \title{Studies on Interventions to Reduce Mortality after Liver Transplantation}
-\description{Results from 14 trials examining the mortality risk of interventions for decreasing blood loss and blood transfusion requirements during liver transplantation.}
-\usage{
-Gurusamy2011
+
+\description{
+Results from 14 trials examining the mortality risk of interventions for
+decreasing blood loss and blood transfusion requirements during liver
+transplantation.
 }
+
+\usage{Gurusamy2011}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -15,24 +21,45 @@ The data frame contains the following columns:
 \bold{n}         \tab \code{integer}   \tab number of individuals
 }
 }
+
 \details{
-   This network meta-analysis compared the effectiveness of seven interventions for decreasing blood loss and blood transfusion requirements during liver transplantation (Gurusamy et al., 2011).
+This network meta-analysis compared the effectiveness of seven interventions
+for decreasing blood loss and blood transfusion requirements during liver
+transplantation (Gurusamy et al., 2011).
 
-   Fourteen studies reported mortality at 60 days, in 1,002 patients. Forty-five deaths were reported across all studies (4.5\%). Six studies observed deaths in all treatment arms while three studies did not observe any deaths.
+Fourteen studies reported mortality at 60 days, in 1,002 patients. Forty-five
+deaths were reported across all studies (4.5\%). Six studies observed deaths in
+all treatment arms while three studies did not observe any deaths.
 
-   This Set was used in Efthimiou et al. (2019) to introduce the Mantel-Haenszel method for network meta-analysis.
+This data set was used in Efthimiou et al. (2019) to introduce the
+Mantel-Haenszel method for network meta-analysis.
 
-   One of the treatments (solvent detergent plasma) was only included in one study with zero events in both treatment arms; this study was excluded from all network meta-analyses. In addition, no death was observed in the antithrombin III arm of the only study evaluating this treatment which was excluded from the Mantel-Haenszel network meta-analysis.
+One of the treatments (solvent detergent plasma) was only included in one study
+with zero events in both treatment arms; this study was excluded from all
+network meta-analyses. In addition, no death was observed in the
+antithrombin III arm of the only study evaluating this treatment which was
+excluded from the Mantel-Haenszel network meta-analysis.
 }
+
 \source{
-   Gurusamy, K. S., Pissanou, T., Pikhart, H., Vaughan, J., Burroughs, A. K., & Davidson, B. R. (2011). Methods to decrease blood loss and transfusion requirements for liver transplantation. \emph{Cochrane Database of Systematic Reviews}, \bold{12}, CD009052. \verb{https://doi.org/10.1002/14651858.CD009052.pub2}
+Gurusamy KS, Pissanou T, Pikhart H, Vaughan J, Burroughs AK, Davidson BR (2011):
+Methods to decrease blood loss and transfusion requirements for liver
+transplantation.
+\emph{Cochrane Database of Systematic Reviews},
+\bold{12}, CD009052.
+\verb{https://doi.org/10.1002/14651858.CD009052.pub2}
 }
+
 \references{
-   Efthimiou, O., Rücker, G., Schwarzer, G., Higgins, J., Egger, M., & Salanti, G. (2019). A Mantel-Haenszel model for network meta-analysis of rare events. \emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. \verb{https://doi.org/10.1002/sim.8158}
+Efthimiou O, Rücker G, Schwarzer G, Higgins J, Egger M, Salanti G (2019):
+A Mantel-Haenszel model for network meta-analysis of rare events.
+\emph{Statistics in Medicine},
+\bold{38}(16), 2992--3012.
+\verb{https://doi.org/10.1002/sim.8158}
 }
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 # Only study evaluating solvent detergent plasma
 subset(Gurusamy2011, study == "Williamson 1999")
@@ -41,6 +68,7 @@ subset(Gurusamy2011, study == "Williamson 1999")
 subset(Gurusamy2011, study == "Baudo 1992")
 
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -97,11 +125,11 @@ print(netsplit(nma_MH), show = "both", ci = TRUE, overall = FALSE,
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}
-\section{Concepts}{
-   medicine, odds ratios, network meta-analysis, Mantel-Haenszel method
-}
+\section{Concepts}{medicine, odds ratios, network meta-analysis, Mantel-Haenszel methods}

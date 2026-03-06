@@ -36,11 +36,11 @@ The data frame contains the following columns:
 }
 }
 \details{
-   This Set comes from a systematic review of 8 pharmacological treatments of depression and placebo in primary care with 66 studies (8 of which were 3-arm studies) including 14,785 patients.
+   This data set comes from a systematic review of 8 pharmacological treatments of depression and placebo in primary care with 66 studies (8 of which were 3-arm studies) including 14,785 patients.
 
    The primary outcome is early response, defined as at least a 50\% score reduction on a depression scale after completion of treatment. Secondary outcomes (also measured as dichotomous) were early remission (defined as having a symptom score below a fixed threshold after completion of treatment), lost to follow-up, lost to follow-up due to adverse events, and any adverse event. The odds ratio was used as effect measure.
 
-   This Set was used as an example in Rücker and Schwarzer (2017) who introduced methods to resolve conflicting rankings of outcomes in network meta-analysis.
+   This data set was used as an example in Rücker and Schwarzer (2017) who introduced methods to resolve conflicting rankings of outcomes in network meta-analysis.
 }
 \source{
    Linde, K., Kriston, L., Rücker, G., Jamil, S., Schumann, I., Meissner, K., Sigterman, K., & Schneider, A. (2015). Efficacy and acceptability of pharmacological treatments for depressive disorders in primary care: Systematic review and network meta-analysis. \emph{Annals of Family Medicine}, \bold{13}(1), 69--79. \verb{https://doi.org/10.1370/afm.1687}
@@ -53,6 +53,7 @@ The data frame contains the following columns:
 }
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -106,11 +107,11 @@ plot(po12)
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{psychiatry}
 \concept{odds ratios}
 \concept{network meta-analysis}
-\section{Concepts}{
-   medicine, psychiatry, odds ratios, network meta-analysis
-}
+\section{Concepts}{medicine, psychiatry, odds ratios, network meta-analysis}

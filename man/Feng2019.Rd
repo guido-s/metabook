@@ -1,11 +1,15 @@
 \name{Feng2019}
 \docType{data}
 \alias{Feng2019}
+
 \title{Studies on the Prevalence of Depression After Myocardial Infarction}
-\description{Results from 19 studies assessing the prevalence of depression after myocardial infarction}
-\usage{
-Feng2019
-}
+
+\description{
+Results from 19 studies assessing the prevalence of depression after
+myocardial infarction}
+
+\usage{Feng2019}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -24,17 +28,25 @@ The data frame contains the following columns:
 \bold{n} \tab \code{integer} \tab sample size \cr
 }
 }
-\details{This data set comes from a meta-analysis with 19 studies to estimate the prevalence of depression after a myocardial infarction. The variables depr and n contain the number of depressive patients and the total number of patients.}
+
+\details{
+This data set comes from a meta-analysis with 19 studies to estimate the
+prevalence of depression after a myocardial infarction. The variables depr
+and n contain the number of depressive patients and the total number of
+patients.}
+
 \source{
-Feng, L., Li, L., Liu, W., et al. (2019).
-Prevalence of depression in myocardial infarction: A PRISMA-compliant meta-analysis.
+Feng L, Li L, Liu W, et al. (2019):
+Prevalence of depression in myocardial infarction: A PRISMA-compliant
+meta-analysis.
 \emph{Medicine}, \bold{98}.
 }
-\author{
-Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -48,5 +60,7 @@ forest(mp1, digits = 3, xlim = c(0, 1),
   print.pval.Q = FALSE, details = TRUE)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{prevalence}

@@ -1,11 +1,16 @@
 \name{Baker2009}
 \docType{data}
 \alias{Baker2009}
+
 \title{Studies on Pharmacologic Treatments for Chronic Obstructive Pulmonary Disease}
-\description{Results from 39 trials examining pharmacologic treatments for chronic obstructive pulmonary disease (COPD).}
-\usage{
-Baker2009
+
+\description{
+Results from 39 trials examining pharmacologic treatments for chronic
+obstructive pulmonary disease (COPD).
 }
+
+\usage{Baker2009}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -17,19 +22,33 @@ The data frame contains the following columns:
 \bold{total}     \tab \code{numeric}   \tab number of individuals
 }
 }
-\details{
-   This Set comes from a systematic review of randomized controlled trials on pharmacologic treatments for chronic obstructive pulmonary disease (COPD) (Baker et al., 2009).
 
-   The primary outcome, occurrence of one or more episodes of COPD exacerbation, is binary (yes / no). For this outcome, five drug treatments (fluticasone, budesonide, salmeterol, formoterol, tiotropium) and two combinations (fluticasone + salmeterol, budesonide + formoterol) were compared to placebo. The authors considered the two combinations as separate treatments instead of evaluating the individual components.
+\details{
+This data set comes from a systematic review of randomized controlled trials on
+pharmacologic treatments for chronic obstructive pulmonary disease (COPD)
+(Baker et al., 2009).
+
+The primary outcome, occurrence of one or more episodes of COPD exacerbation,
+is binary (yes / no). For this outcome, five drug treatments (fluticasone,
+budesonide, salmeterol, formoterol, tiotropium) and two combinations
+(fluticasone + salmeterol, budesonide + formoterol) were compared to placebo.
+The authors considered the two combinations as separate treatments instead of
+evaluating the individual components.
 }
+
 \source{
-   Baker, W. L., Baker, E. L., & Coleman, C. I. (2009). Pharmacologic treatments for chronic obstructive pulmonary disease: A mixed-treatment comparison meta-analysis. \emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy}, \bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
+Baker WL, Baker EL, Coleman CI (2009):
+Pharmacologic treatments for chronic obstructive pulmonary disease:
+A mixed-treatment comparison meta-analysis.
+\emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy},
+\bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
 }
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -50,7 +69,7 @@ nma <- netmeta(pw, common = FALSE, ref = "plac")
 # Show network graph
 netgraph(nma, seq = "optimal", start = "prcomp",
   labels = gsub("+", " +\n", trts, fixed = TRUE),
-  plastic = TRUE, thickness = "se.fixed", number = TRUE,
+  plastic = TRUE, thickness = "se.common", number = TRUE,
   points = TRUE, cex.points = 5, col.points = "red",
   offset = 0.025)
 
@@ -70,12 +89,12 @@ forest(nb)
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{pulmonology}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{component network meta-analysis}
-\section{Concepts}{
-   medicine, pulmonology, odds ratios, network meta-analysis, component network meta-analysis
-}
+\section{Concepts}{medicine, pulmonology, odds ratios, network meta-analysis, component network meta-analysis}

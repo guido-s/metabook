@@ -1,11 +1,16 @@
 \name{Curtin2002}
 \docType{data}
 \alias{Curtin2002}
+
 \title{Studies on Potassium Supplementation to Reduce Diastolic Blood Pressure}
-\description{Results from 21 cross-over studies evaluating the effect of potassium supplementation to reduce diastolic blood pressure.}
-\usage{
-Curtin2002
+
+\description{
+Results from 21 cross-over studies evaluating the effect of potassium
+supplementation to reduce diastolic blood pressure.
 }
+
+\usage{Curtin2002}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -17,22 +22,34 @@ The data frame contains the following columns:
 \bold{corr}   \tab \code{numeric}   \tab within-patient correlation \cr
 }
 }
-\details{
-   Results from 21 cross-over studies evaluating the effect of potassium supplementation to reduce diastolic blood pressure (Curtin et al., 2002, Table II).
 
-   This data set is used as an example in Schwarzer et al. (2015), Chapter 2.
+\details{
+Results from 21 cross-over studies evaluating the effect of potassium
+supplementation to reduce diastolic blood pressure
+(Curtin et al., 2002, Table II).
+
+This data set is used as an example in Schwarzer et al. (2015), Chapter 2.
 }
+
 \source{
-   Curtin, F., Altman, D. G., & Elbourne, D. (2002). Meta-analysis combining parallel and cross-over clinical trials. I: Continuous outcomes. \emph{Statistics in Medicine}, \bold{21}(15), 2131--2144. \verb{https://doi.org/10.1002/sim.1205}
+Curtin F, Altman DG, Elbourne D (2002):
+Meta-analysis combining parallel and cross-over clinical trials. I:
+Continuous outcomes.
+\emph{Statistics in Medicine}, \bold{21}(15), 2131--2144.
+\verb{https://doi.org/10.1002/sim.1205}
 }
+
 \references{
-   Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
+Schwarzer G, Carpenter JR and Rücker G (2015):
+\emph{Meta-Analysis with R (Use-R!)}.
+Springer International Publishing, Switzerland
 }
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -42,15 +59,15 @@ oldset <- settings.meta(method.tau = "DL", digits = 2)
 
 # Conduct meta-analysis
 mg2 <- metagen(mean, SE, studlab = paste(author, year),
-               data = Curtin2002, sm = "MD")
+  data = Curtin2002, sm = "MD")
 mg2
 
 # Use previous settings
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
-\concept{raw mean differences}
-\section{Concepts}{
-   raw mean differences
 }
+
+\keyword{data sets}
+\concept{mean differences}
+\section{Concepts}{mean differences}

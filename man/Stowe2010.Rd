@@ -26,7 +26,7 @@ The data frame contains the following columns:
 }
 }
 \details{
-   This Set contains data from a Cochrane review assessing efficacy and safety of three drug classes as adjuvant treatment to levodopa therapy in patients with Parkinson disease and motor complications (Stowe et al., 2010).
+   This data set contains data from a Cochrane review assessing efficacy and safety of three drug classes as adjuvant treatment to levodopa therapy in patients with Parkinson disease and motor complications (Stowe et al., 2010).
 
    The authors conducted three pairwise meta-analyses comparing dopamine agonists, catechol-O-methyl transferase inhibitors (COMTI), and monoamine oxidase type B inhibitors (MAOBI) with placebo. The primary outcome was the mean reduction of the time spent in a relatively immobile \sQuote{off} phase (mean off-time), calculated in hours per day. Relative treatment effects were expressed as mean difference. Data on this outcome were available for 5,331 patients from 28 studies comparing an active treatment with placebo and one three-arm study comparing two active treatments with placebo.
 }
@@ -38,6 +38,7 @@ The data frame contains the following columns:
 }
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -94,10 +95,10 @@ netleague(nma, seq = netrank(nma), ci = FALSE)
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
-\concept{medicine}
-\concept{raw mean differences}
-\concept{network meta-analysis}
-\section{Concepts}{
-   medicine, raw mean differences, network meta-analysis
 }
+
+\keyword{data sets}
+\concept{medicine}
+\concept{mean differences}
+\concept{network meta-analysis}
+\section{Concepts}{medicine, mean differences, network meta-analysis}

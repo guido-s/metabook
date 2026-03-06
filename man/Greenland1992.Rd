@@ -1,11 +1,16 @@
 \name{Greenland1992}
 \docType{data}
 \alias{Greenland1992}
+
 \title{Case-Control Studies on Impact of Alcohol Consumption on Breast Cancer Risk}
-\description{Results from 16 case-control studies evaluating the impact of alcohol consumption on breast cancer risk.}
-\usage{
-Greenland1992
+
+\description{
+Results from 16 case-control studies evaluating the impact of alcohol
+consumption on breast cancer risk.
 }
+
+\usage{Greenland1992}
+
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -15,19 +20,30 @@ The data frame contains the following columns:
 \bold{SE} \tab \code{numeric} \tab standard error \cr
 }  
 }
+
 \details{
-Greenland and Longecker (1992) describe a method to combine trend estimates from summarised dose-response data. A meta-analysis of 16 case-control studies evaluating the impact of alcohol consumption on breast cancer risk was used as an illustrative example. The estimates are the increase in the log relative risk of breast cancer associated with an average daily alcohol consumption of 1g.
+Greenland and Longecker (1992) describe a method to combine trend estimates
+from summarised dose-response data. A meta-analysis of 16 case-control studies
+evaluating the impact of alcohol consumption on breast cancer risk was used as
+an illustrative example. The estimates are the increase in the log relative
+risk of breast cancer associated with an average daily alcohol
+consumption of 1g.
 
-Data are provided in Greenland and Longecker (1992), Table 3.}
+The data are provided in Greenland and Longecker (1992), Table 3.}
+
 \source{
-Greenland , S., and M. P. Longnecker (1992). Methods for Trend Estimation from Summarized Dose-Response Data, with Applications to Meta-Analysis.  \emph{American Journal of Epidemiology}, \bold{135}(11): 1301--9.
+Greenland S, Longnecker MP (1992):
+Methods for trend estimation from summarized dose-response data, with
+applications to meta-analysis.
+\emph{American Journal of Epidemiology},
+\bold{135}(11): 1301--9.
+}
 
-}
-\author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
-}
+\author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
+
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -42,9 +58,9 @@ print(mg, digits = 5)
 round(mg$seTE.common, 5)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{epidemiology}
 \concept{risk ratios}
-\section{Concepts}{
-   epidemiology, risk ratios
-}
+\section{Concepts}{epidemiology, risk ratios}

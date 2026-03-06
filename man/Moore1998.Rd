@@ -41,6 +41,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -56,10 +57,10 @@ legend(0.25, 1.25, bty = "n",
   legend = fun$text.contour, fill = fun$col.contour)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{odds ratios}
 \concept{publication bias}
-\section{Concepts}{
-   medicine, odds ratios, publication bias
-}
+\section{Concepts}{medicine, odds ratios, publication bias}

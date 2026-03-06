@@ -4,7 +4,9 @@
 
 \title{Trials on Serum Cholesterin Concentration Lowering and Risk of Ischaemic Heart Disease}
 
-\description{Results from 28 trials evaluating effect of serum cholesterin concentration lowering on risk of ischaemic heart disease}
+\description{
+Results from 28 trials evaluating effect of serum cholesterin concentration
+lowering on risk of ischaemic heart disease}
 
 \usage{Thompson1999}
 
@@ -24,7 +26,9 @@ The data frame contains the following columns:
 }
 
 \details{
-Thompson & Sharp (1999) compare several meta-regression approaches to explain heterogeneity in meta-analysis. The data set used is originally from Law et al. (1994).
+Thompson & Sharp (1999) compare several meta-regression approaches to explain
+heterogeneity in meta-analysis. The data set used goes back to
+Law et al. (1994).
 }
 
 \source{
@@ -44,6 +48,7 @@ concentration lower risk of ischaemic heart disease?
 
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -58,8 +63,9 @@ metareg(ma, cholr, method.tau = "FE")
 metareg(ma, cholr, method.tau = "DL")
 }
 }
+}
 
-\keyword{Sets}
+\keyword{data sets}
 \concept{epidemiology}
 \concept{odds ratios}
 \concept{meta-regression}

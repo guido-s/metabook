@@ -31,6 +31,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -57,9 +58,9 @@ forest(m.haq, test.overall = TRUE, hetstat = FALSE,
   digits.TE = 2, digits.se = 2)
 }
 }
-\keyword{Sets}
-\concept{medicine}
-\concept{raw mean differences}
-\section{Concepts}{
-   medicine, raw mean differences
 }
+
+\keyword{data sets}
+\concept{medicine}
+\concept{mean differences}
+\section{Concepts}{medicine, mean differences}

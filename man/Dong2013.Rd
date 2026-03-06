@@ -20,7 +20,7 @@ The data frame contains the following columns:
 
    Mortality was reported in 41 randomized trials, with a total of 52 462 patients. Mortality was low, with 2 408 deaths (4.6\%) reported across all studies. There were nine studies that reported zero events in at least one of the treatment arms and three additional studies had zero events in all treatment arms.
 
-   This Set was used in Efthimiou et al. (2019) to illustrate the Mantel-Haenszel method for network meta-analysis.
+   This data set was used in Efthimiou et al. (2019) to illustrate the Mantel-Haenszel method for network meta-analysis.
 }
 \source{
    Dong, Y.-H., Lin, H.-H., Shau, W.-Y., Wu, Y.-C., Chang, C.-H., & Lai, M.-S. (2013). Comparative safety of inhaled medications in patients with chronic obstructive pulmonary disease: Systematic review and mixed treatment comparison meta-analysis of randomised controlled trials. \emph{Thorax}, \bold{68}(1), 48--56. \verb{https://doi.org/10.1136/thoraxjnl-2012-201926}
@@ -33,6 +33,7 @@ The data frame contains the following columns:
 }
 \examples{
 \donttest{
+if (requireNamespace("netmeta", quietly = TRUE)) {
 # Load netmeta package
 library("netmeta")
 
@@ -77,11 +78,11 @@ print(netsplit(nma), show = "both", ci = TRUE, overall = FALSE,
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}
-\section{Concepts}{
-   medicine, odds ratios, network meta-analysis, Mantel-Haenszel method
-}
+\section{Concepts}{medicine, odds ratios, network meta-analysis, Mantel-Haenszel method}

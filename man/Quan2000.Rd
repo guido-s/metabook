@@ -17,7 +17,7 @@ The data frame contains the following columns:
 }  
 }
 \details{
-Quan et al. (2000) conducted a Cochrane Review to evaluate whether the benefit of treating hypertension in women differed between younger and older women, as well as between white and African American women. In the systematic review, the Peto method was used for pooling. The primary outcome was the occurrence of fatal cerebrovascular events, a rare event in hypertension. The Set contains the subgroup of women older than 55 years.
+Quan et al. (2000) conducted a Cochrane Review to evaluate whether the benefit of treating hypertension in women differed between younger and older women, as well as between white and African American women. In the systematic review, the Peto method was used for pooling. The primary outcome was the occurrence of fatal cerebrovascular events, a rare event in hypertension. This data set contains the subgroup of women older than 55 years.
 
 This data set is used as an example in Schwarzer et al. (2015).
 }
@@ -37,6 +37,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -52,9 +53,9 @@ m
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{Peto's method}
-\section{Concepts}{
-   medicine, Peto's method
-}
+\section{Concepts}{medicine, Peto's method}

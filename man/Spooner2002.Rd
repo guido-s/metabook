@@ -36,6 +36,7 @@ The data frame contains the following columns:
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -54,9 +55,9 @@ mc1
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
-\concept{raw mean differences}
-\concept{subgroup analysis}
-\section{Concepts}{
-   raw mean differences, subgroup analysis
 }
+
+\keyword{data sets}
+\concept{mean differences}
+\concept{subgroup analysis}
+\section{Concepts}{mean differences, subgroup analysis}
