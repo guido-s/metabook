@@ -3,7 +3,7 @@ Official Git repository of R package **metabook**
 
 [![License: GPL (>=2)](https://img.shields.io/badge/license-GPL-blue)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![CRAN Version](https://www.r-pkg.org/badges/version/metabook)](https://cran.r-project.org/package=metabook)
-[![GitHub develop](https://img.shields.io/badge/develop-0.2--0-purple)](https://img.shields.io/badge/develop-0.2--0-purple)
+[![GitHub develop](https://img.shields.io/badge/develop-0.3--0-purple)](https://img.shields.io/badge/develop-0.3--0-purple)
 [![Monthly Downloads](https://cranlogs.r-pkg.org/badges/metabook)](https://cranlogs.r-pkg.org/badges/metabook)
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/metabook)](https://cranlogs.r-pkg.org/badges/grand-total/metabook)
 
@@ -25,7 +25,7 @@ Data sets and code supporting the second edition of "Meta-Analysis with R" by Sc
 install.packages("metabook")
 ```
 
-### Current [![GitHub develop](https://img.shields.io/badge/develop-0.2--0-purple)](https://img.shields.io/badge/develop-0.2--0-purple) release on GitHub:
+### Current [![GitHub develop](https://img.shields.io/badge/develop-0.3--0-purple)](https://img.shields.io/badge/develop-0.3--0-purple) release on GitHub:
 
 Installation using R package
 [**remotes**](https://cran.r-project.org/package=remotes):

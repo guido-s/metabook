@@ -14,13 +14,13 @@ prevent pain during propofol injection.
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{study}     \tab \code{character} \tab study label \cr
-\bold{author}    \tab \code{character} \tab first author \cr
-\bold{year}      \tab \code{numeric}   \tab year of publication \cr
 \bold{id}        \tab \code{numeric}   \tab study ID \cr
+\bold{study}     \tab \code{character} \tab study label \cr
 \bold{trt}       \tab \code{character} \tab treatment \cr
 \bold{pain}      \tab \code{numeric}   \tab number of individuals with pain \cr
-\bold{n}     \tab \code{numeric}   \tab number of individuals
+\bold{n}         \tab \code{numeric}   \tab number of individuals \cr
+\bold{author}    \tab \code{character} \tab first author \cr
+\bold{year}      \tab \code{numeric}   \tab year of publication \cr
 }
 }
 
