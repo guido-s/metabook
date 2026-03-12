@@ -40,7 +40,8 @@ Hong H, Chu H, Zhang J, Carlin BP (2016):
 A Bayesian missing data framework for generalized multiple outcome mixed
 treatment comparisons.
 \emph{Research Synthesis Methods},
-\bold{7}, 6--22
+\bold{7}, 6--22,
+\verb{https://doi.org/10.1002/jrsm.1153}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
@@ -78,4 +79,4 @@ netrank(nma_dis)
 \concept{pain}
 \concept{mean differences}
 \concept{network meta-analysis}
-\section{Concepts}{medicine, main, mean differences, network meta-analysis}
+\section{Concepts}{medicine, pain, mean differences, network meta-analysis}
