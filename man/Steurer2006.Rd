@@ -29,7 +29,7 @@ This data set is used as an example in Schwarzer et al. (2015).
 Steurer, M., Pall, G., Richards, S., et al. (2006).
 Purine antagonists for chronic lymphocytic leukaemia.
 \emph{Cochrane Database of Systematic Reviews},
-\bold{3}, \verb{https://doi.org/10.1002/14651858.CD004270.pub2}
+\bold{3}, \url{https://doi.org/10.1002/14651858.CD004270.pub2}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015).

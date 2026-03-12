@@ -26,10 +26,10 @@ The data frame contains the following columns:
    This data set was used as an example in Rücker et al. (2020) to illustrate component network meta-analysis using frequentist methods.
 }
 \source{
-   Linde, K., Rücker, G., Schneider, A., & Kriston, L. (2016). Questionable assumptions hampered interpretation of a network meta-analysis of primary care depression treatments. \emph{Journal of Clinical Epidemiology}, \bold{71}, 86--96. \verb{https://doi.org/10.1016/j.jclinepi.2015.10.010}
+   Linde, K., Rücker, G., Schneider, A., & Kriston, L. (2016). Questionable assumptions hampered interpretation of a network meta-analysis of primary care depression treatments. \emph{Journal of Clinical Epidemiology}, \bold{71}, 86--96. \url{https://doi.org/10.1016/j.jclinepi.2015.10.010}
 }
 \references{
-   Rücker, G., Petropoulou, M., & Schwarzer, G. (2020). Network meta-analysis of multicomponent interventions. \emph{Biometrical Journal}, \bold{62}(3), 808--821. \verb{https://doi.org/10.1002/bimj.201800167}
+   Rücker, G., Petropoulou, M., & Schwarzer, G. (2020). Network meta-analysis of multicomponent interventions. \emph{Biometrical Journal}, \bold{62}(3), 808--821. \url{https://doi.org/10.1002/bimj.201800167}
 }
 \author{
    Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}

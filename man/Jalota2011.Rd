@@ -40,7 +40,7 @@ Prevention of pain on injection of propofol: systematic review and
 meta-analysis.
 \emph{British Medical Journal},
 \bold{342}, d1110.
-\verb{https://doi.org/10.1136/bmj.d1110}.
+\url{https://doi.org/10.1136/bmj.d1110}.
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

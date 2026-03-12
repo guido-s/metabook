@@ -26,7 +26,7 @@ The data frame contains the following columns:
    This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-   Spooner, C., Saunders, L. D., & Rowe, B. H. (2002). Nedocromil sodium for preventing exercise‐induced bronchoconstriction. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, CD001183. \verb{https://doi.org/10.1002/14651858.CD001183}
+   Spooner, C., Saunders, L. D., & Rowe, B. H. (2002). Nedocromil sodium for preventing exercise‐induced bronchoconstriction. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, CD001183. \url{https://doi.org/10.1002/14651858.CD001183}
 }
 \references{
    Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.

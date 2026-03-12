@@ -50,7 +50,8 @@ The data set is in long arm-based format, i.e., one treatment arm per row.
 \source{
 Hamza T, Furukawa TA, Orsini N, Cipriani A, Iglesias C, Salanti G  (2021):
 A dose-effect network meta-analysis model: an application in antidepressants.
-\emph{Zenodo}, \verb{https://doi.org/10.5281/zenodo.5866456}
+\emph{Zenodo}.
+\url{https://doi.org/10.5281/zenodo.5866456}
 }
 
 \references{

@@ -24,7 +24,7 @@ The data frame contains the following columns:
 Lloyd et al. (2010) report results of a systematic review evaluating the effectiveness of anti-TNF-alpha inhibitors in the treatment of rheumatoid arthritis. The authors conducted separate meta-analyses for HAQ and DAS-28.
 }
 \source{
-Lloyd, S., Bujkiewicz, S., Wailoo, A.J., et al. (2010). The effectiveness of anti-TNF-alpha therapies when used sequentially in rheumatoid arthritis patients: A systematic review and meta-analysis. \emph{Rheumatology (Oxford)}, \bold{49}, 2313-21. \verb{https://doi.org/10.1093/rheumatology/keq169}
+Lloyd, S., Bujkiewicz, S., Wailoo, A.J., et al. (2010). The effectiveness of anti-TNF-alpha therapies when used sequentially in rheumatoid arthritis patients: A systematic review and meta-analysis. \emph{Rheumatology (Oxford)}, \bold{49}, 2313-21. \url{https://doi.org/10.1093/rheumatology/keq169}
 }
 \author{
 Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}

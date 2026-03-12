@@ -42,7 +42,7 @@ Furukawa TA, McGuire H, Barbui C (2003):
 Low dosage tricyclic antidepressants for depression.
 \emph{Cochrane Database of Systematic Reviews},
 \bold{3}, CD003197.
-\verb{https://doi.org/10.1002/14651858.CD003197}
+\url{https://doi.org/10.1002/14651858.CD003197}
 }
 
 \references{

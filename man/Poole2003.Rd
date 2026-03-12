@@ -26,7 +26,7 @@ Poole and Black (2003) conducted a Cochrane review to evaluate mucolytic agents 
 This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Poole, P.J., Black, P.N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD001287}
+Poole, P.J., Black, P.N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \url{https://doi.org/10.1002/14651858.CD001287}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.

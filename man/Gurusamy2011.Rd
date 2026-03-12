@@ -47,7 +47,7 @@ Methods to decrease blood loss and transfusion requirements for liver
 transplantation.
 \emph{Cochrane Database of Systematic Reviews},
 \bold{12}, CD009052.
-\verb{https://doi.org/10.1002/14651858.CD009052.pub2}
+\url{https://doi.org/10.1002/14651858.CD009052.pub2}
 }
 
 \references{
@@ -55,7 +55,7 @@ Efthimiou O, Rücker G, Schwarzer G, Higgins J, Egger M, Salanti G (2019):
 A Mantel-Haenszel model for network meta-analysis of rare events.
 \emph{Statistics in Medicine},
 \bold{38}(16), 2992--3012.
-\verb{https://doi.org/10.1002/sim.8158}
+\url{https://doi.org/10.1002/sim.8158}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

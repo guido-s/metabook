@@ -39,7 +39,7 @@ Ketotifen alone or as additional medication for long-term control of asthma and
 wheeze in children.
 \emph{Cochrane Database of Systematic Reviews},
 \bold{1}, CD001384.
-\verb{https://doi.org/10.1002/14651858.CD001384.pub2}}
+\url{https://doi.org/10.1002/14651858.CD001384.pub2}}
 
 \references{
 Schwarzer G, Carpenter JR and Rücker G (2015):

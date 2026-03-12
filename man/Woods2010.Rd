@@ -32,7 +32,7 @@ Network meta-analysis on the log-hazard scale, combining count and
 hazard ratio statistics accounting for multi-arm trials: A tutorial.
 \emph{BMC Medical Research Methodology},
 \bold{10}, 54.
-\verb{https://doi.org/10.1186/1471-2288-10-54}
+\url{https://doi.org/10.1186/1471-2288-10-54}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

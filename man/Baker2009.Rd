@@ -41,7 +41,7 @@ Baker WL, Baker EL, Coleman CI (2009):
 Pharmacologic treatments for chronic obstructive pulmonary disease:
 A mixed-treatment comparison meta-analysis.
 \emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy},
-\bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
+\bold{29}(8), 891--905. \url{https://doi.org/10.1592/phco.29.8.891}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
