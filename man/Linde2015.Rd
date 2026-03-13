@@ -43,10 +43,10 @@ The data frame contains the following columns:
    This data set was used as an example in Rücker and Schwarzer (2017) who introduced methods to resolve conflicting rankings of outcomes in network meta-analysis.
 }
 \source{
-   Linde, K., Kriston, L., Rücker, G., Jamil, S., Schumann, I., Meissner, K., Sigterman, K., & Schneider, A. (2015). Efficacy and acceptability of pharmacological treatments for depressive disorders in primary care: Systematic review and network meta-analysis. \emph{Annals of Family Medicine}, \bold{13}(1), 69--79. \url{https://doi.org/10.1370/afm.1687}
+   Linde, K., Kriston, L., Rücker, G., Jamil, S., Schumann, I., Meissner, K., Sigterman, K., & Schneider, A. (2015). Efficacy and acceptability of pharmacological treatments for depressive disorders in primary care: Systematic review and network meta-analysis. \emph{Annals of Family Medicine}, \bold{13}(1), 69--79. \doi{10.1370/afm.1687}
 }
 \references{
-   Rücker, G., & Schwarzer, G. (2017). Resolve conflicting rankings of outcomes in network meta-analysis: Partial ordering of treatments. \emph{Research Synthesis Methods}, \bold{8}(4), 526--536. \url{https://doi.org/10.1002/jrsm.1270}
+   Rücker, G., & Schwarzer, G. (2017). Resolve conflicting rankings of outcomes in network meta-analysis: Partial ordering of treatments. \emph{Research Synthesis Methods}, \bold{8}(4), 526--536. \doi{10.1002/jrsm.1270}
 }
 \author{
    Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}

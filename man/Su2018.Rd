@@ -40,7 +40,7 @@ Statistical approaches to adjusting weights for dependent arms in
 network meta-analysis.
 \emph{Research Synthesis Methods},
 \bold{9}, 431--40.
-\url{https://doi.org/10.1002/jrsm.1304}
+\doi{10.1002/jrsm.1304}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

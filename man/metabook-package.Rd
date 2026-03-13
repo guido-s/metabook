@@ -4,7 +4,7 @@
 \name{metabook-package}
 \alias{metabook-package}
 \alias{metabook}
-\title{metabook: Data Sets and Code for Meta-Analysis with R}
+\title{metabook: Data Sets and Code for "Meta-Analysis with R"}
 \description{
 Data sets and code supporting the second edition of "Meta-Analysis with R"
 by Schwarzer, Carpenter, and Rücker.
