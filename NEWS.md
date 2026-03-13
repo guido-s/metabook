@@ -1,4 +1,4 @@
-## metabook, version 0.2-0 (2026-03-12)
+## metabook, version 0.2-0 (2026-03-13)
 
 ### Major changes
 
