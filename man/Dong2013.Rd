@@ -23,10 +23,10 @@ The data frame contains the following columns:
    This data set was used in Efthimiou et al. (2019) to illustrate the Mantel-Haenszel method for network meta-analysis.
 }
 \source{
-   Dong, Y.-H., Lin, H.-H., Shau, W.-Y., Wu, Y.-C., Chang, C.-H., & Lai, M.-S. (2013). Comparative safety of inhaled medications in patients with chronic obstructive pulmonary disease: Systematic review and mixed treatment comparison meta-analysis of randomised controlled trials. \emph{Thorax}, \bold{68}(1), 48--56. \url{https://doi.org/10.1136/thoraxjnl-2012-201926}
+   Dong, Y.-H., Lin, H.-H., Shau, W.-Y., Wu, Y.-C., Chang, C.-H., & Lai, M.-S. (2013). Comparative safety of inhaled medications in patients with chronic obstructive pulmonary disease: Systematic review and mixed treatment comparison meta-analysis of randomised controlled trials. \emph{Thorax}, \bold{68}(1), 48--56. \doi{10.1136/thoraxjnl-2012-201926}
 }
 \references{
-   Efthimiou, O., Rücker, G., Schwarzer, G., Higgins, J., Egger, M., & Salanti, G. (2019). A Mantel-Haenszel model for network meta-analysis of rare events. \emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. \url{https://doi.org/10.1002/sim.8158}
+   Efthimiou, O., Rücker, G., Schwarzer, G., Higgins, J., Egger, M., & Salanti, G. (2019). A Mantel-Haenszel model for network meta-analysis of rare events. \emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. \doi{10.1002/sim.8158}
 }
 \author{
    Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}

@@ -25,7 +25,7 @@ This data set is used as an example in Schwarzer et al. (2015).
 Quan, A.P., Kerlikowske, K. Gueyffier, F., et al., & Indana Investigators (2000).
 Pharmacotherapy for hypertension in women of different races.
 \emph{Cochrane Database of Systematic Reviews}, \bold{2},
-\url{https://doi.org/10.1002/14651858.CD002146}
+\doi{10.1002/14651858.CD002146}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015).

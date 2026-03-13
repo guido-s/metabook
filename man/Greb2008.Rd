@@ -38,7 +38,7 @@ Greb A, Bohlius J, Schiefer D, et al. (2008):
 High‐dose chemotherapy with autologous stem cell transplantation in the first
 line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults.
 \emph{Cochrane Database of Systematic Reviews}, \bold{1},
-\url{https://doi.org/10.1002/14651858.CD004024.pub2}
+\doi{10.1002/14651858.CD004024.pub2}
 }
 
 \references{

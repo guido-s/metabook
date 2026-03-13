@@ -31,7 +31,7 @@ The data frame contains the following columns:
    The authors conducted three pairwise meta-analyses comparing dopamine agonists, catechol-O-methyl transferase inhibitors (COMTI), and monoamine oxidase type B inhibitors (MAOBI) with placebo. The primary outcome was the mean reduction of the time spent in a relatively immobile \sQuote{off} phase (mean off-time), calculated in hours per day. Relative treatment effects were expressed as mean difference. Data on this outcome were available for 5,331 patients from 28 studies comparing an active treatment with placebo and one three-arm study comparing two active treatments with placebo.
 }
 \source{
-   Stowe, R., Ives, N., Clarke, C. E., Deane, K., Hilten, V., Wheatley, K., Gray, R., Handley, K., & Furmston, A. (2010). Evaluation of the efficacy and safety of adjuvant treatment to levodopa therapy in Parkinson's disease patients with motor complications. \emph{Cochrane Database of Systematic Reviews}, \bold{7}, CD007166. \url{https://doi.org/10.1002/14651858.CD007166.pub2}
+   Stowe, R., Ives, N., Clarke, C. E., Deane, K., Hilten, V., Wheatley, K., Gray, R., Handley, K., & Furmston, A. (2010). Evaluation of the efficacy and safety of adjuvant treatment to levodopa therapy in Parkinson's disease patients with motor complications. \emph{Cochrane Database of Systematic Reviews}, \bold{7}, CD007166. \doi{10.1002/14651858.CD007166.pub2}
 }
 \author{
    Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}

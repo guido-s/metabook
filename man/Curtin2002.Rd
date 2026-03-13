@@ -36,7 +36,7 @@ Curtin F, Altman DG, Elbourne D (2002):
 Meta-analysis combining parallel and cross-over clinical trials. I:
 Continuous outcomes.
 \emph{Statistics in Medicine}, \bold{21}(15), 2131--2144.
-\url{https://doi.org/10.1002/sim.1205}
+\doi{10.1002/sim.1205}
 }
 
 \references{
