@@ -48,13 +48,13 @@ framework for pairwise and network meta-analysis of randomized controlled
 trials.
 \emph{Medical Decision Making},
 \bold{33}(5), 607--617.
-\url{https://doi.org/10.1177/0272989X12458724}
+\doi{10.1177/0272989X12458724}
 
 Franchini AJ, Dias S, Ades AE, Jansen JP, Welton, NJ (2012):
 Accounting for correlation in network meta-analysis with multi-arm trials.
 \emph{Research Synthesis Methods},
 \bold{3}(2), 142--160.
-\url{https://doi.org/10.1002/jrsm.1049}
+\doi{10.1002/jrsm.1049}
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

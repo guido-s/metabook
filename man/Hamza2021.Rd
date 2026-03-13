@@ -51,7 +51,7 @@ The data set is in long arm-based format, i.e., one treatment arm per row.
 Hamza T, Furukawa TA, Orsini N, Cipriani A, Iglesias C, Salanti G  (2021):
 A dose-effect network meta-analysis model: an application in antidepressants.
 \emph{Zenodo}.
-\url{https://doi.org/10.5281/zenodo.5866456}
+\doi{10.5281/zenodo.5866456}
 }
 
 \references{
@@ -75,6 +75,7 @@ Network meta-analysis with dose-response relationships.
 }
 
 \examples{
+\donttest{
 if (requireNamespace("netdose", quietly = TRUE)) {
 # Load netdose package
 library("netdose")
@@ -82,11 +83,14 @@ library("netdose")
 pw <- pairwise(agent = drug, dose = dose, studlab = id,
   event = resp, n = total, data = Hamza2021, sm = "OR")
 
+\dontrun{
+# Do not execute without user input due to the long run time
 drnma.quad <- netdose(TE, seTE, agent1, dose1, agent2, dose2, studlab,
   data = pw, method = "quadratic")
-
 dotplot(drnma.quad)
 plot(drnma.quad)
+}
+}
 }
 }
 
