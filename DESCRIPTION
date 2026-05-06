@@ -1,9 +1,9 @@
 Package: metabook
 Title: Data Sets and Code for "Meta-Analysis with R"
-Version: 0.2-0
-Date: 2026-03-13
+Version: 0.3-0
+Date: 2026-05-05
 Depends: R (>= 4.0.0)
-Suggests: meta, netmeta, metasens, netdose
+Suggests: meta, netmeta, metasens, netdose, mvmeta
 Authors@R: person("Guido", "Schwarzer",
                   role = c("cre", "aut"),
                   email = "guido.schwarzer@uniklinik-freiburg.de",
@@ -15,4 +15,4 @@ Description: Data sets and code supporting the second edition of "Meta-Analysis 
 LazyData: TRUE
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.3.3
+Config/roxygen2/version: 8.0.0

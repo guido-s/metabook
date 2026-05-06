@@ -1,4 +1,4 @@
-# metabook: Data Sets and Code for Meta-Analysis with R
+# metabook: Data Sets and Code for "Meta-Analysis with R"
 Official Git repository of R package **metabook**
 
 [![License: GPL (>=2)](https://img.shields.io/badge/license-GPL-blue)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
