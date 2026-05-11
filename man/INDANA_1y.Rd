@@ -1,15 +1,15 @@
-\name{INDANA}
+\name{INDANA_1y}
 \docType{data}
-\alias{INDANA}
+\alias{INDANA_1y}
 
 \title{Studies on Systolic and Diastolic Blood Pressure}
 
 \description{
-Results from eight trials evaluation the treatment effect on systolic and
+Results from eight trials evaluating the treatment effect on systolic and
 diastolic blood pressure one year post randomisation.
 }
 
-\usage{INDANA}
+\usage{INDANA_1y}
 
 \format{
 The data frame contains the following columns:
@@ -27,12 +27,12 @@ The data frame contains the following columns:
 }
 
 \details{
-This data set comes from eight trials evaluation the treatment effect on systolic and
-diastolic blood pressure one year post randomisation.
+This data set comes from eight trials evaluating the treatment effect on
+systolic and diastolic blood pressure one year post randomisation.
 }
 
 \source{
-INDANA
+INDANA_1y
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
