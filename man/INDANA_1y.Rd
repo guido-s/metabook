@@ -14,7 +14,7 @@ diastolic blood pressure one year post randomisation.
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{study}      \tab \code{character} \tab study label \cr
+\bold{trial}      \tab \code{character} \tab trial label \cr
 \bold{n}          \tab \code{numeric}   \tab number of individuals \cr
 \bold{mean.sys}   \tab \code{numeric}   \tab systolic blood pressure (mmHG) \cr
 \bold{var.sys}    \tab \code{numeric}   \tab variance of systolic blood pressure \cr
@@ -29,10 +29,6 @@ The data frame contains the following columns:
 \details{
 This data set comes from eight trials evaluating the treatment effect on
 systolic and diastolic blood pressure one year post randomisation.
-}
-
-\source{
-INDANA_1y
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}

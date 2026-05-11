@@ -14,7 +14,7 @@ pressure two years post randomisation.
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{study}    \tab \code{character} \tab study label \cr
+\bold{trial}    \tab \code{character} \tab trial label \cr
 \bold{group}    \tab \code{character} \tab treatment \cr
 \bold{mean.sys} \tab \code{numeric}   \tab systolic blood pressure (mmHG) \cr
 \bold{sd.sys}   \tab \code{numeric}   \tab standard deviation of systolic blood pressure \cr
@@ -26,10 +26,6 @@ The data frame contains the following columns:
 \details{
 This data set comes from seven trials evaluating the treatment effect on
 systolic blood pressure two years post randomisation.
-}
-
-\source{
-INDANA_2y_sys
 }
 
 \author{Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}}
