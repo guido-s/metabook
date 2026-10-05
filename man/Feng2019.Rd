@@ -51,12 +51,12 @@ if (requireNamespace("meta", quietly = TRUE)) {
 library("meta")
 
 # Conduct random effects meta-analysis
-mp1 <- metaprop(depr, n, data = Feng2019,
+ma <- metaprop(depr, n, data = Feng2019,
   studlab = paste(author, year),
   common = FALSE, prediction = TRUE)
 
 # Create forest plot
-forest(mp1, digits = 3, xlim = c(0, 1),
+forest(ma, digits = 3, xlim = c(0, 1),
   print.pval.Q = FALSE, details = TRUE)
 }
 }

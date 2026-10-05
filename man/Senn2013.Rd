@@ -53,17 +53,16 @@ oldset <- settings.meta(digits = 2)
 
 # Transform data from long arm-based format to contrast-based
 # format.
-pw1 <- pairwise(studlab = study, treat = treatment,
+pw <- pairwise(studlab = study, treat = treatment,
   n = n, mean = mean, sd = sd, data = Senn2013,
   varnames = c("MD", "seMD"))
 
 # Conduct network meta-analysis
-nma1 <- netmeta(pw1, random = FALSE,
-  reference.group = "placebo")
-nma1
+nma <- netmeta(pw, random = FALSE, reference.group = "placebo")
+print(nma)
 
 # Draw network graph
-netgraph(nma1, seq = "optimal", multiarm = TRUE,
+netgraph(nma, seq = "optimal", multiarm = TRUE,
   cex = 1.5, lwd = 7, rotate = -1 / n * 360,
   pch.points = 21, bg.points = "lightblue",
   cex.points = n.trts, points.max = 10,

@@ -45,7 +45,7 @@ oldset <- settings.meta("RevMan5",
   digits.I2 = 2, digits.tau = 3, digits.sd = 2)
 
 # Conduct random effects meta-analysis
-m <- metacont(Ne, Me, Se, Nc, Mc, Sc, data = Poole2003,
+ma <- metacont(Ne, Me, Se, Nc, Mc, Sc, data = Poole2003,
   studlab = paste(author, year), common = FALSE,
   subgroup = duration,
   subgroup.name = "Duration", sep.subgroup = ": ",
@@ -56,7 +56,7 @@ m <- metacont(Ne, Me, Se, Nc, Mc, Sc, data = Poole2003,
   col.label.left = "green", col.label.right = "red")
 
 # Forest plot
-forest(m, xlim = c(-0.5, 0.2),
+forest(ma, xlim = c(-0.5, 0.2),
   xlab = paste0("Difference in mean number of\n",
     "acute exacerbations per month"))
 

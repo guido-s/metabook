@@ -68,8 +68,8 @@ nma_dis <- netmeta(pw_dis, common = FALSE, reference.group = "No treatment",
   small.values = "desirable")
 
 # P-scores
-netrank(nma_pain)
-netrank(nma_dis)
+print(netrank(nma_pain))
+print(netrank(nma_dis))
 }
 }
 }

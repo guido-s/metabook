@@ -3,7 +3,10 @@
 ### Major changes
 
 * New data sets: [Tian2009](https://doi.org/10.1093/biostatistics/kxn034),
-  [Bujkiewicz2019](https://doi.org/10.1002/sim.8187)
+  [Bujkiewicz2019](https://doi.org/10.1002/sim.8187),
+  INDANA_1y, INDANA_2y_resp, INDANA_2y_sys
+
+* Add R packages **mvmeta**, **mvnma**, **brglm2**, and **dplyr** to Suggests
 
 
 ## metabook, version 0.2-0 (2026-03-13)

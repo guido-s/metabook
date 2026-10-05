@@ -66,7 +66,7 @@ nma <- netmeta(pw, common = FALSE, reference = "Flap op",
 netgraph(nma, seq = "o")
 
 # Print results for network meta-analysis
-nma
+print(nma)
 }
 }
 }

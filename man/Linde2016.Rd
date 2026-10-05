@@ -70,13 +70,13 @@ nma <- netmeta(pw, reference.group = "placebo",
 netgraph(nma, seq = "o")
 
 # Show results
-nma
+print(nma)
 forest(nma, xlim = c(0.2, 50))
 
 # Additive component network meta-analysis with placebo as inactive
 # treatment
 cnma <- netcomb(nma, inactive = "placebo")
-cnma
+print(cnma)
 forest(cnma, xlim = c(0.2, 50))
 
 # Use previous settings

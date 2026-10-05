@@ -45,9 +45,9 @@ library("meta")
 oldset <- settings.meta("RevMan5")
 
 # Conduct meta-analyis with Peto method
-m <- metabin(Ee, Ne, Ec, Nc, sm = "OR", method = "Peto",
+ma <- metabin(Ee, Ne, Ec, Nc, sm = "OR", method = "Peto",
   data = Quan2000, studlab = study, random = FALSE)
-m
+print(ma)
 
 # Use previous settings
 settings.meta(oldset)

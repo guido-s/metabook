@@ -44,12 +44,12 @@ library("meta")
 oldset <- settings.meta("RevMan5")
 
 # Conduct random effects meta-analysis with age subgroups
-mc1 <- metacont(Ne, Me, Se, Nc, Mc, Sc,
-                data = Spooner2002, studlab = paste(author, year),
-                subgroup = agegroup, print.subgroup.name = FALSE,
-                label.e = "Nedocromil sodium", label.c = "Placebo",
-                common = FALSE)
-mc1
+ma <- metacont(Ne, Me, Se, Nc, Mc, Sc,
+  data = Spooner2002, studlab = paste(author, year),
+  subgroup = agegroup, print.subgroup.name = FALSE,
+  label.e = "Nedocromil sodium", label.c = "Placebo",
+  common = FALSE)
+print(ma)
 
 # Use previous settings
 settings.meta(oldset)

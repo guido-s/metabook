@@ -88,8 +88,8 @@ pw2 <- pairwise(trt, event = resp, n = n, studlab = id,
 nc1 <- netconnection(pw1)
 nc2 <- netconnection(pw2)
 #
-nc1
-nc2
+print(nc1)
+print(nc2)
 
 # Network graphs
 #
@@ -110,17 +110,17 @@ mvnma12 <- mvnma(pw1, pw2,
 # Results similar to models 1d and 2d in the supplementary Table 3
 # (Bujkiewicz et al., 2019)
 #
-mvnma12
+print(mvnma12)
 forest(mvnma12)
 
 # Calculate SUCRAs (not shown in main manuscript)
 #
 mvr1 <- mvrank(mvnma12, small.values = c("desirable", "undesirable"))
-mvr1
+print(mvr1)
 
 # VIKOR calculated from multivariate network meta-analysis
 #
-vikor(mvr1)
+print(vikor(mvr1))
 
 # Compare with results using frequentist approach in netmeta
 #
@@ -135,13 +135,13 @@ forest(nma2)
 nr1 <- netrank(nma1, method = "sucra")
 nr2 <- netrank(nma2, method = "sucra")
 #
-nr1
-nr2
+print(nr1)
+print(nr2)
 
 # VIKOR calculated from univariate network meta-analyses
 #
 np12 <- netposet(nr1, nr2, outcomes = outcomes)
-vikor(np12)
+print(vikor(np12))
 }
 }
 }

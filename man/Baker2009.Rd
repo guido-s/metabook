@@ -74,12 +74,12 @@ netgraph(nma, seq = "optimal", start = "prcomp",
   offset = 0.025)
 
 # Print and plot results for network meta-analysis
-nma
+print(nma)
 forest(nma)
 
 # Conduct component network meta-analysis (CNMA)
 cnma <- netcomb(nma)
-cnma
+print(cnma)
 
 # Compare results of NMA and additive CNMA
 nb <- netbind(nma, cnma, name = c("Standard NMA", "Additive CNMA"))

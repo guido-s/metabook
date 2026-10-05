@@ -39,22 +39,22 @@ library("meta")
 lloyd5 <- subset(Lloyd2010, !is.na(mean.haq) & !is.na(mean.das))
 
 # Univariate meta-analysis of the DAS-28 outcome
-m.das <- metagen(mean.das,
+ma_das <- metagen(mean.das,
   lower = lower.das, upper = upper.das,
   data = lloyd5, sm = "MD",
   studlab = paste(author, year),
   random = FALSE)
 # Univariate meta-analysis of the HAQ outcome
-m.haq <- metagen(mean.haq,
+ma_haq <- metagen(mean.haq,
   lower = lower.haq, upper = upper.haq,
   data = lloyd5, sm = "MD",
   studlab = paste(author, year),
   random = FALSE)
 
 # Forest plots
-forest(m.das, test.overall = TRUE, hetstat = FALSE,
+forest(ma_das, test.overall = TRUE, hetstat = FALSE,
   digits.TE = 2, digits.se = 2)
-forest(m.haq, test.overall = TRUE, hetstat = FALSE,
+forest(ma_haq, test.overall = TRUE, hetstat = FALSE,
   digits.TE = 2, digits.se = 2)
 }
 }

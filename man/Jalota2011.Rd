@@ -68,7 +68,7 @@ nma <- netmeta(pw, common = FALSE, ref = "Hand vein")
 netgraph(nma, seq = "o", multiarm = TRUE, rotate = 3 / n * 360)
 
 # Print and plot results for network meta-analysis
-nma
+print(nma)
 forest(nma,
   label.left = "Favours other", label.right = "Favours Hand vein")
 

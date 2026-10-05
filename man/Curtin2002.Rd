@@ -58,9 +58,9 @@ library("meta")
 oldset <- settings.meta(method.tau = "DL", digits = 2)
 
 # Conduct meta-analysis
-mg2 <- metagen(mean, SE, studlab = paste(author, year),
+ma <- metagen(mean, SE, studlab = paste(author, year),
   data = Curtin2002, sm = "MD")
-mg2
+print(ma)
 
 # Use previous settings
 settings.meta(oldset)

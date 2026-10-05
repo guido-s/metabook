@@ -48,14 +48,14 @@ if (requireNamespace("meta", quietly = TRUE)) {
 library("meta")
 
 # Inverse variance method
-mg <- metagen(b, SE, data = Greenland1992,
+ma <- metagen(b, SE, data = Greenland1992,
   studlab = paste(author, year), sm = "RR",
   random = FALSE, overall.hetstat = FALSE,
   backtransf = FALSE)
 # Overall result
-print(mg, digits = 5)
+print(ma, digits = 5)
 # Standard error for common effect estimate
-round(mg$seTE.common, 5)
+print(round(ma$seTE.common, 5))
 }
 }
 }

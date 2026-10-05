@@ -60,22 +60,22 @@ library("meta")
 oldset <- settings.meta(method.tau = "DL", digits = 2)
 
 # Calculate experimental and control event rates
-with(Bassler2004, summary(Ee / Ne))
-with(Bassler2004, summary(Ec / Nc))
+print(with(Bassler2004, summary(Ee / Ne)))
+print(with(Bassler2004, summary(Ec / Nc)))
 
 # Conduct meta-analysis using the inverse variance method
-mb3 <- metabin(Ee, Ne, Ec, Nc, method = "I",
+ma <- metabin(Ee, Ne, Ec, Nc, method = "I",
   data = Bassler2004, studlab = study)
-mb3
+print(ma)
 
 # Conduct subgroup analysis comparing trials with adequate blinding
 # to trials with inadequate or unclear blinding
-mb3s <- update(mb3, subgroup = blind, print.subgroup.name = FALSE)
-mb3s
+ma_blind <- update(ma, subgroup = blind, print.subgroup.name = FALSE)
+print(ma_blind)
 
 # Conduct subgroup analysis assuming common between-study variance in subgroups
-mb3s.c <- update(mb3s, tau.common = TRUE)
-mb3s.c
+ma_blind_c <- update(ma_blind, tau.common = TRUE)
+print(ma_blind_c)
 
 # Use previous settings
 settings.meta(oldset)

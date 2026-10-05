@@ -59,16 +59,16 @@ library("meta")
 oldset <- settings.meta("RevMan5")
 
 # Conduct common effect meta-analysis with risk ratio as effect measure
-mb1 <- metabin(Ee, Ne, Ec, Nc, 
+ma <- metabin(Ee, Ne, Ec, Nc, 
   data = Greb2008, studlab = study,
   label.e = "High dose", label.c = "Standard",
   label.left = "Favours standard chemotherapy",
   label.right = "Favours high dose chemotherapy",
   col.label.left = "red", col.label.right = "green")
-mb1
+print(ma)
 
 # Create forest plot
-forest(mb1)
+forest(ma)
 
 # Use previous settings
 settings.meta(oldset)

@@ -51,7 +51,7 @@ pw <- pairwise(treatment, death, randomized, studlab = id,
   data = Dong2013, sm = "OR")
 
 # Calculated log odds ratios (TE) and standard errors (seTE)
-pw[1:3, 1:9]
+print(pw[1:3, 1:9])
 
 # Conduct Mantel-Haenszel network meta-analysis (NMA)
 nma <- netmetabin(pw, ref = "plac")
@@ -63,12 +63,12 @@ netgraph(nma, seq = "optimal", col = "black", plastic = FALSE,
   number.of.studies = TRUE)
 
 # Show results for Mantel-Haenszel NMA
-nma
+print(nma)
 forest(nma)
 
 # League table with network estimates in lower triangle and direct
 # estimates in upper triangle
-netleague(nma)
+print(netleague(nma))
 
 # Assess inconsistency
 print(netsplit(nma), show = "both", ci = TRUE, overall = FALSE,

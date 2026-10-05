@@ -49,17 +49,17 @@ library("meta")
 oldset <- settings.meta("RevMan5")
 
 # Conduct common effect meta-analysis
-m1 <- metagen(lnHR, selnHR, data = Steurer2006,
+ma1 <- metagen(lnHR, selnHR, data = Steurer2006,
   studlab = paste(author, year),
   sm = "HR", random = FALSE, n.e = Ne, n.c = Nc)
-m1
+print(ma1)
 
 # Same analysis using lower and upper confidence limits
-m2 <- metagen(HR, lower = lowHR, upper = uppHR,
+ma2 <- metagen(HR, lower = lowHR, upper = uppHR,
   data = Steurer2006, transf = FALSE,
   studlab = paste(author, year),
   sm = "HR", random = FALSE, n.e = Ne, n.c = Nc)
-m2
+print(ma2)
 
 # Use previous settings
 settings.meta(oldset)

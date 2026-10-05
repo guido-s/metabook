@@ -55,7 +55,7 @@ pw <- pairwise(treat = list(t1, t2, t3), n = list(n1, n2, n3),
 
 # Show calculated mean differences (TE) for three studies
 selstudy <- c("COMTI(E) INT-OZ", "LARGO", "COMTI(E) Nomecomt")
-subset(pw, studlab \%in\% selstudy)[, c(3:7, 10, 1)]
+print(subset(pw, studlab \%in\% selstudy)[, c(3:7, 10, 1)])
 
 # Conduct random effects network meta-analysis (NMA)
 # with placebo as reference
@@ -67,7 +67,7 @@ netgraph(nma, number = TRUE, multiarm = TRUE,
   cex.number = 1, pos.number.of.studies = 0.3)
 
 # Print NMA results
-nma
+print(nma)
 
 # Forest plot with NMA results
 forest(nma)
@@ -77,19 +77,19 @@ forest(nma)
 forest(nma, ref = c("C", "D", "M"), baseline = FALSE, drop = TRUE)
 
 # Treatment ranking using P-scores
-netrank(nma)
+print(netrank(nma))
 
 # Rankogram with all ranking probabilities
 set.seed(1909)
 ran <- rankogram(nma)
-ran
+print(ran)
 plot(ran)
 
 # Treatment ranking using SUCRAs
-netrank(ran)
+print(netrank(ran))
 
 # League table showing network and direct estimates
-netleague(nma, seq = netrank(nma), ci = FALSE)
+print(netleague(nma, seq = netrank(nma), ci = FALSE))
 
 # Use previous settings
 settings.meta(oldset)

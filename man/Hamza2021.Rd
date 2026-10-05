@@ -83,13 +83,11 @@ library("netdose")
 pw <- pairwise(agent = drug, dose = dose, studlab = id,
   event = resp, n = total, data = Hamza2021, sm = "OR")
 
-\dontrun{
-# Do not execute without user input due to the long run time
-drnma.quad <- netdose(TE, seTE, agent1, dose1, agent2, dose2, studlab,
+drnma <- netdose(TE, seTE, agent1, dose1, agent2, dose2, studlab,
   data = pw, method = "quadratic")
-dotplot(drnma.quad)
-plot(drnma.quad)
-}
+
+dotplot(drnma)
+plot(drnma)
 }
 }
 }

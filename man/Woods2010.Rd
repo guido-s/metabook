@@ -59,11 +59,10 @@ pw
 
 # Conduct network meta-analysis
 nma <- netmeta(pw)
-nma
+print(nma)
 
 # Show forest plot
-forest(nma, ref = "Placebo", drop = TRUE,
-  leftlabs = "Contrast to Placebo")
+forest(nma, ref = "Placebo", drop = TRUE, leftlabs = "Contrast to Placebo")
 
 # Use previous settings
 settings.meta(oldset)

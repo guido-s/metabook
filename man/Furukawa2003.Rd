@@ -63,9 +63,9 @@ library("meta")
 oldset <- settings.meta("RevMan5", digits = 2)
 
 # Conduct random effects meta-analysis with Hedges' g as effect measure
-mc2 <- metacont(Ne, Me, Se, Nc, Mc, Sc, common = FALSE,
+ma <- metacont(Ne, Me, Se, Nc, Mc, Sc, common = FALSE,
   data = Furukawa2003, sm = "SMD")
-mc2
+print(ma)
 
 # Use previous settings
 settings.meta(oldset)

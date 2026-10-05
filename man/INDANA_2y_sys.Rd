@@ -38,7 +38,7 @@ pw <- pairwise(group, n = nobs, mean = mean.sys, sd = sd.sys,
   data = INDANA_2y_sys, studlab = trial,
   reference.group = "placebo")
 #
-summary(metagen(pw))
+print(summary(metagen(pw)))
 }
 }
 }

@@ -62,14 +62,14 @@ pw <- pairwise(treat = treatment, n = total, event = stroke,
   studlab = study, data = Dogliotti2014, sm = "OR")
 
 # Print log odds ratios (TE) and standard errors (seTE)
-head(pw, 5)[, 1:5]
+print(head(pw, 5)[, 1:5])
 
 # Conduct network meta-analysis (NMA) with placebo as reference
 nma <- netmeta(pw, ref = "plac")
 
 # Details on excluded study
 selvars <- c("studlab", "event1", "n1", "event2", "n2")
-subset(pw, studlab == "WASPO, 2007")[, selvars]
+print(subset(pw, studlab == "WASPO, 2007")[, selvars])
 
 # Show network graph
 netgraph(nma, seq = "optimal", number = TRUE)
@@ -83,7 +83,7 @@ nb <- netbind(nma, nma_mh, random = FALSE,
 forest(nb, xlim = c(0.15, 2), at = c(0.2, 0.5, 1, 2))
 
 # Print and plot results for inverse variance NMA
-nma
+print(nma)
 forest(nma)
 
 # Use previous settings

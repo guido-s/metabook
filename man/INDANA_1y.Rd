@@ -35,8 +35,30 @@ systolic and diastolic blood pressure one year post randomisation.
 
 \examples{
 \donttest{
-if (requireNamespace("mvmeta", quietly = TRUE)) {
-# mvmeta example
+if (requireNamespace("meta", quietly = TRUE) &&
+    requireNamespace("mvmeta", quietly = TRUE) &&
+    requireNamespace("dplyr", quietly = TRUE)) {
+library("meta")
+library("mvmeta")
+library("dplyr")
+
+ma_sys <- metagen(mean.sys, sqrt(var.sys), data = INDANA_1y, 
+  sm = "MD", studlab = paste(trial, year))
+print(ma_sys, digits = 2)
+
+ma_dia <- metagen(mean.dia, sqrt(var.dia), data = INDANA_1y, 
+  sm = "MD", studlab = paste(trial, year))
+print(ma_dia, digits = 2)
+
+rownames(INDANA_1y) <- INDANA_1y$trial
+INDANA_1y \%>\% select(mean.sys, mean.dia) \%>\%
+  as.matrix() -> theta
+INDANA_1y \%>\%
+  select(var.sys, covariance, var.dia) \%>\%
+  as.matrix() -> S
+
+mv_1y <- mvmeta(theta, S, method = "fixed")
+print(summary(mv_1y), digits = 3)
 }
 }
 }

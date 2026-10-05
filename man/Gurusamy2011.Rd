@@ -110,12 +110,12 @@ forest(netbind(nma_MH, nma_IV,
   random = FALSE, name = c("MH NMA", "IV NMA")))
 
 # Show results for Mantel-Haenszel NMA
-nma_MH
+print(nma_MH)
 forest(nma_MH)
 
 # League table with network estimates in lower triangle and direct
 # estimates in upper triangle
-netleague(nma_MH)
+print(netleague(nma_MH))
 
 # Assess inconsistency
 print(netsplit(nma_MH), show = "both", ci = TRUE, overall = FALSE,

@@ -123,7 +123,7 @@ mm <- metamerge(mm, ma_plma1)
 }
 
 fname <- tempfile(pattern = "forest", fileext = ".pdf")
-fname
+print(fname)
 forest(mm, label.event = "Deaths", xlim = c(0.1, 20), file = fname)
 
 # Use previous settings

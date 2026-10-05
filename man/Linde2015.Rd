@@ -81,22 +81,25 @@ pw1 <- pairwise(list(treatment1, treatment2, treatment3),
 # small.values)
 nma1 <- netmeta(pw1, common = FALSE, reference = "Placebo", seq = trts,
   small.values = "undesirable")
-nma1
+#
+print(nma1)
 
 # Random effects NMA for early remission
 pw2 <- pairwise(treat = list(treatment1, treatment2, treatment3),
   event = list(remi1, remi2, remi3),
   n = list(n1, n2, n3),
   studlab = id, data = Linde2015, sm = "OR")
+#
 nma2 <- netmeta(pw2, common = FALSE,
-   seq = trts, ref = "Placebo", small.values = "undesirable")
-nma2
+  seq = trts, ref = "Placebo", small.values = "undesirable")
+#
+print(nma2)
 
 # Ranking of treatments
 nr1 <- netrank(nma1)
 nr2 <- netrank(nma2)
-nr1
-nr2
+print(nr1)
+print(nr2)
 
 # Partial order of treatment rankings (two outcomes)
 outcomes <- c("Early response", "Early remission")

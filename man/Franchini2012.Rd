@@ -78,11 +78,11 @@ pw <- pairwise(list(Treatment1, Treatment2, Treatment3),
   data = Franchini2012, studlab = Study, sm = "MD")
 
 # Show calculated mean differences (TE) for first three studies
-pw[1:5, c(3:7, 10, 1)]
+print(pw[1:5, c(3:7, 10, 1)])
 
 # Conduct network meta-analysis
 nma <- netmeta(pw)
-nma
+print(nma)
 
 # Draw network graph
 netgraph(nma, points = TRUE, cex.points = 3, cex = 1.5,

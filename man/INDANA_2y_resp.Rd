@@ -37,11 +37,10 @@ patients with a lower systolic blood pressure after two years.
 \donttest{
 if (requireNamespace("meta", quietly = TRUE)) {
 library("meta")
-ma <- metabin(resp.exp, resp.exp + fail.exp,
-  resp.plac, resp.plac + fail.plac,
+ma <- metabin(resp.exp, resp.exp + fail.exp, resp.plac, resp.plac + fail.plac,
   data = INDANA_2y_resp, studlab = trial)
 #
-ma
+print(ma)
 }
 }
 }

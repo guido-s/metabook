@@ -58,9 +58,9 @@ ma <- metabin(ihd.exp, ihd.exp + noihd.exp, ihd.cont, ihd.cont + noihd.cont,
 
 # Thompson & Sharp (1999), Table III
 # (1) None
-metareg(ma, cholr, method.tau = "FE")
+print(metareg(ma, cholr, method.tau = "FE"))
 # (3a) Additive (MM)
-metareg(ma, cholr, method.tau = "DL")
+print(metareg(ma, cholr, method.tau = "DL"))
 }
 }
 }

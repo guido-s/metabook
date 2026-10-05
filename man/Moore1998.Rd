@@ -46,12 +46,12 @@ if (requireNamespace("meta", quietly = TRUE)) {
 library("meta")
 
 # Conduct meta-analysis
-m <- metabin(Ee, Ne, Ec, Nc, data = Moore1998,
+ma <- metabin(Ee, Ne, Ec, Nc, data = Moore1998,
   sm = "OR", studlab = id,
   label.e = "NSAIDS", label.c = "Placebo")
 
 # Funnel plot
-fun <- funnel(m, type = "contour",
+fun <- funnel(ma, type = "contour",
   random = FALSE, pch = 16)
 legend(0.25, 1.25, bty = "n",
   legend = fun$text.contour, fill = fun$col.contour)

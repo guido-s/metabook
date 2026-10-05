@@ -3,7 +3,7 @@ Title: Data Sets and Code for "Meta-Analysis with R"
 Version: 0.3-0
 Date: 2026-10-05
 Depends: R (>= 4.0.0)
-Suggests: meta, netmeta, metasens, netdose, mvmeta, mvnma, brglm2
+Suggests: meta, netmeta, metasens, netdose, mvmeta, mvnma, brglm2, dplyr
 Authors@R: person("Guido", "Schwarzer",
                   role = c("cre", "aut"),
                   email = "guido.schwarzer@uniklinik-freiburg.de",
