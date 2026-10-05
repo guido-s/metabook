@@ -16,6 +16,13 @@
 #' \emph{Evidence-Based Mental Health},
 #' \bold{22}, 153--160
 #' 
+#' Balduzzi S, Rücker G, Nikolakopoulou A, Papakonstantinou T, Salanti
+#' G, Efthimiou O, Schwarzer G (2023):
+#' netmeta: An R Package for network meta-analysis using frequentist
+#' methods.
+#' \emph{Journal of Statistical Software},
+#' \bold{106}, 1--40
+#' 
 #' Schwarzer G, Carpenter JR and Rücker G (2015):
 #' \emph{Meta-Analysis with R (Use-R!)}.
 #' Springer International Publishing, Switzerland

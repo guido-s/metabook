@@ -1,3 +1,11 @@
+## metabook, version 0.3-0 (2026-mm-dd)
+
+### Major changes
+
+* New data sets: [Tian2009](https://doi.org/10.1093/biostatistics/kxn034),
+  [Bujkiewicz2019](https://doi.org/10.1002/sim.8187)
+
+
 ## metabook, version 0.2-0 (2026-03-13)
 
 ### Major changes

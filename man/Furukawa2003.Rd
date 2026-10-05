@@ -14,7 +14,7 @@ antidepressants (TCA) and placebo for the treatment of depression.
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{author} \tab \code{character} \tab First author with information on dosage in parentheses \cr
+\bold{author} \tab \code{character} \tab first author with information on dosage in parentheses \cr
 \bold{Ne} \tab \code{integer} \tab number of patients in low TCA group \cr
 \bold{Me} \tab \code{numeric} \tab depression severity (low TCA) \cr
 \bold{Se} \tab \code{numeric} \tab standard deviation (low TCA) \cr
